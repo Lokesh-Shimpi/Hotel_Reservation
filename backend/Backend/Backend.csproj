@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="microsoft.aspnet.webapi.owinselfhost" Version="5.3.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.10">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Backend.Models\Backend.Models.csproj" />
+    <ProjectReference Include="..\Backend.Services\Backend.Services.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwRoot\img\AkshatDwivediSign.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\ExceptionLogs\" />
+    <Folder Include="wwwroot\RequestLogs\" />
+  </ItemGroup>
+
+</Project>
